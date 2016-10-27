@@ -1,0 +1,67 @@
+.requestForm
+
+	width: 100%
+	text-align: center
+	margin-bottom: 82px
+
+	&Contact
+
+		margin-bottom: 50px
+
+	&Title
+
+		color: #3b3a3a
+		font-size: 30px
+		margin-bottom: 42px
+
+		&Left
+
+			text-align: left
+
+	.controlArea
+
+		margin-bottom: 24px
+
+		.inputWrap,
+		.selectWrap
+
+			width: calc(50% - 6px)
+
+			&:first-child
+
+				margin-right: 12px
+
+		input,
+		textarea
+
+			&:focus
+
+				border-color: #fb6788
+
+	&Submit
+
+		@extend .btn
+		color: #fff
+		padding: 11px 56px 11px 69px
+		position: relative
+		z-index: 1
+		background-color: #fa476f
+
+		&:hover
+
+			background-color: darken(#fa476f,3%)
+
+		&:before
+
+
+			display: block
+			position: absolute
+			top: 50%
+			left: 43px
+			content: '\f0e0'
+			font-family: $ff-fontello
+			font-size: 13px
+			color: #fff
+			background: none
+			margin-top: -13px
+

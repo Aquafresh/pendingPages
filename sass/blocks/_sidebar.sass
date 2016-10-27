@@ -1,0 +1,146 @@
+.sidebar
+
+	&Nav
+
+		max-width: 233px
+
+		&List
+
+			border-bottom: 2px solid #e8f0f5
+			margin-bottom: 6px
+
+			&:last-child
+
+				margin-bottom: 0
+				border-bottom: none
+
+			li
+
+				margin: 5px 0
+
+				&.active
+
+					span,
+					a
+
+						&:hover
+
+							&:after
+
+								display: none
+
+					span,
+					a
+
+						border-radius: 3px
+						background-color: #fa476f
+						color: #fff
+						box-shadow: 0px 3px 12px 0px rgba(0, 0, 1, 0.35)
+						padding-left: 35px
+						padding-top: 4px
+						padding-bottom: 4px
+						display: inline-block
+						width: 100%
+						position: relative
+						z-index: 1
+
+					&.icon
+
+						&Target
+
+							a,
+							span
+
+								&:before
+
+									background-position: 0px -38px
+
+						&Schedule
+
+							a,
+							span
+
+								&:before
+
+									background-position: -42px -38px
+
+				&.icon
+
+					&Cog
+
+						a,
+						span
+
+							&:before
+
+								content: '\e801'
+								font-family: $ff-fontello
+								position: absolute
+								top: 50%
+								left: 10px
+								font-size: 16px
+								line-height: 16px
+								margin-top: -9px
+
+					&Target
+
+						a,
+						span
+
+							&:before
+
+								content: ''
+								background: url('../img/sprite.png') no-repeat
+								background-position: -46px 0px
+								position: absolute
+								top: 50%
+								left: 10px
+								font-size: 13px
+								width: 14px
+								height: 14px
+								margin-top: -7px
+
+					&Schedule
+
+						a,
+						span
+
+							&:before
+
+								content: ''
+								background: url('../img/sprite.png') no-repeat
+								background-position: -28px -39px
+								position: absolute
+								top: 50%
+								left: 10px
+								font-size: 13px
+								width: 14px
+								height: 14px
+								margin-top: -7px
+
+			a,
+			span
+
+				color: #7c83cd
+				font-size: 17px
+				padding-left: 35px
+				display: inline-block
+				vertical-align: top
+				position: relative
+				z-index: 1
+
+				&:after
+
+					content: '\2192'
+					display: inline-block
+					vertical-align: top
+					opacity: 0
+					margin-left: 5px
+
+				&:hover
+
+					color: #5d629c
+
+					&:after
+
+						opacity: 1

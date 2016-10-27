@@ -1,0 +1,24 @@
+%svg-common {
+	background: url("../sprite.svg") no-repeat;
+}
+
+.svg-ARROW {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-ARROW-dims {
+	width: 34px;
+	height: 29px;
+}
+
+.svg-download {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-download-dims {
+	width: 34px;
+	height: 33px;
+}
+

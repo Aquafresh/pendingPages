@@ -1,0 +1,137 @@
+
+$ff-regular: 'Open-Sans', arial,sans-serif
+$ff-bold: 'Open-Sans-Bold', arial,sans-serif
+$ff-light: 'Open-Sans-Light', arial,sans-serif
+$ff-semibold: 'Open-Semibold', arial,sans-serif
+$ff-fontello: 'fontello', arial,sans-serif
+
+
+// extend style
+.btn
+
+	display: inline-block
+	vertical-align: top
+	box-shadow: 0px 3px 12px 0px rgba(0, 0, 1, 0.35)
+	text-align: center
+	border-radius: 3px
+	position: relative
+	z-index: 1
+	cursor: pointer
+
+.btnColorPink
+
+	background-color: #fa476f
+	color: #fff
+
+	&:hover
+
+		background-color: lighten(#fa476f, 3%)
+
+	&:active
+
+		background-color: darken(#fa476f, 3%)
+
+.btnColorWhite
+
+	background-color: #FFF
+	color: #6772e5
+
+	&:hover
+
+		background-color: lighten(#efefef, 3%)
+
+	&:active
+
+		background-color: darken(#efefef, 1%)
+
+.btnUserBlue
+
+	background-color: #1281b9
+
+	&:hover
+
+		background-color: lighten(#1281b9, 3%)
+
+	&:active
+
+		background-color: darken(#1281b9, 3%)
+
+.btnUserWhite
+
+	background-color: #FFF
+	color: #1281b9
+
+	&:hover
+
+		background-color: lighten(#efefef, 3%)
+
+	&:active
+
+		background-color: darken(#efefef, 1%)
+
+.btnTab
+
+	background-color: #e8f1f6
+	border-radius: 3px
+	color: #98afbe
+	display: inline-block
+	text-align: center
+	position: relative
+	z-index: 1
+	padding: 4px 21px
+	font-size: 15px
+	cursor: pointer
+	transition: none
+
+	&:before
+
+		color: #98afbe
+
+	&:hover
+
+		background-color: darken(#e8f1f6, 2%)
+
+	&:active
+
+		background-color: lighten(#e8f1f6, 2%)
+
+.btnTabActive
+
+	background-color: #314355
+	color: #ffffff
+
+	&:before
+
+		color: #fa476f
+
+	&:after
+
+		content: ''
+		display: block
+		width: 0
+		height: 0
+		border-left: 7px solid transparent
+		border-right: 7px solid transparent
+		border-top: 7px solid #314355
+		position: absolute
+		bottom: -7px
+		left: 0
+		right: 0
+		margin: 0 auto
+
+	&:hover,
+	&:active
+
+		background-color: #314355
+
+.caseIcon
+
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMAQMAAABoTh6ZAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABNJREFUCNdj+MHA8PsPnIQANEEA+SINrW7GvhEAAAAASUVORK5CYII=') no-repeat 50% 50%
+
+.caseIconActive
+
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMAQMAAABoTh6ZAAAABlBMVEUAAAD6R29/AerCAAAAAXRSTlMAQObYZgAAABNJREFUCNdj+MHA8PsPnIQANEEA+SINrW7GvhEAAAAASUVORK5CYII=') no-repeat 50% 50%
+
+.caseIconNormal
+
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMAQMAAABoTh6ZAAAABlBMVEUAAACYr75TIW4qAAAAAXRSTlMAQObYZgAAABNJREFUCNdj+MHA8PsPnIQANEEA+SINrW7GvhEAAAAASUVORK5CYII=')  no-repeat 50% 50%

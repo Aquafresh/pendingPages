@@ -1,0 +1,83 @@
+.ourContact
+
+	padding-top: 142px
+	padding-bottom: 60px
+	background-color: #FFF
+
+	&Typography
+
+		padding: 55px 0
+
+	&Case
+
+		border-top: 1px solid #dae8f1
+		padding: 55px 0px
+
+	&Text
+
+		padding-left: 6.333%
+
+		p
+
+			color: #7c83cd
+			font-size: 27px
+			line-height: 40px
+			letter-spacing: -1px
+
+		span
+
+			color: #3b3a3a
+			font-size: 27px
+			line-height: 40px
+			letter-spacing: -1px
+			display: inline-block
+
+	&Btn
+
+		&Wrap
+
+			margin-top: 15px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: flex-start
+
+		&Chat
+
+			@extend .btn
+			@extend .btnColorPink
+			margin-right: 17px
+			padding: 11px 36px 11px 58px
+			padding-left: 58px
+			position: relative
+			z-index: 1
+
+			&:before
+
+				content: '\e804'
+				position: absolute
+				top: 50%
+				left: 27px
+				margin-top: -13px
+				font-family: $ff-fontello
+
+		&Contact
+			@extend .btn
+			@extend .btnColorWhite
+			padding: 11px 36px 11px 58px
+			position: relative
+			z-index: 1
+
+			&:before
+
+				content: '\f0e0'
+				position: absolute
+				top: 50%
+				left: 35px
+				margin-top: -13px
+				font-family: $ff-fontello
+				font-size: 13px
+
+

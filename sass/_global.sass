@@ -1,0 +1,305 @@
+html,
+body
+
+	height: 100%
+	min-width: 320px
+	font-size: 16px
+	line-height: 24px
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p
+
+	padding: 0
+	margin: 0
+
+ul,
+ol
+
+	list-style: none
+
+a
+
+	text-decoration: none
+	outline: none
+
+#pw
+
+	position: relative
+	min-height: 100%
+	transition: none
+	z-index: 1
+
+	&.headerBgIndex
+
+		background: url('../img/headerBgIndex.png') no-repeat 0% 0%
+
+	&.headerBgAbout
+
+		background: url('../img/headerBgAbout.png') no-repeat 0% 0%
+
+	&.headerBgDigital
+
+		background: url('../img/headerBgDigital.png') no-repeat 0% 0%
+
+	&.headerBgMobile
+
+		background: url('../img/headerBgMobile.png') no-repeat 0% 0%
+
+	&.headerBgPortfolio
+
+		background: url('../img/headerBgPortfolio.png') no-repeat 0% 0%
+
+	&.headerBgServices
+
+		background: url('../img/headerBgServices.png') no-repeat 0% 0%
+
+	&.headerBgTeam
+
+		background: url('../img/headerBgTeam.png') no-repeat 0% 0%
+
+	&.headerBgContact
+
+		&:after
+
+			content: ''
+			display: block
+			width: 100%
+			height: 581px
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 2
+			background: url('../img/headerBgContact.png') no-repeat 0% 0%
+
+	&.headerBgTypography
+
+		background: url('../img/headerBgTypography.png') no-repeat 0% 0%
+
+	&.headerBgIndex4
+
+		background: url('../img/headerBgIndex4.png') no-repeat 0% 0%
+
+	&.headerBgIndex3
+
+		background: url('../img/headerBgIndex3.png') no-repeat 0% 0%
+
+.mainContent,
+.mainFooter
+
+	position: relative
+	z-index: 2
+
+.debugger
+
+	outline: 1px solid red
+
+.opacityShow
+
+	opacity: 1
+
+.opacityHide
+
+	opacity: 0
+
+.container
+
+	max-width: 1170px
+	margin: 0 auto
+
+.divideSection
+
+	border-bottom: 1px solid #dae8f1
+
+.mainView
+
+	&Padding
+
+		padding-bottom: 94px
+
+	&Title
+
+		color: #3b3a3a
+		font-size: 36px
+		font-family: $ff-light
+		line-height: 50px
+		letter-spacing: -1px
+		margin-bottom: 17px
+
+	&Text
+
+		color: #3b3a3a
+		line-height: 33px
+		font-family: $ff-light
+		font-size: 17px
+		margin-bottom: 57px
+
+.controlArea
+
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: flex-start
+
+	.inputWrap,
+	.textareaWrap,
+	.selectWrap
+
+		width: 100%
+
+		input,
+		textarea,
+		select
+
+			padding: 0
+			margin: 0
+			width: 100%
+			height: 34px
+			border: none
+			border: 1px solid #d4dadf
+			border-radius: 2px
+			padding-left: 10px
+			color: #b7c2ce
+			font-size: 16px
+
+			&:focus,
+			&:active
+
+				outline: none
+
+		textarea
+
+			padding: 5px 0px 0px 10px
+			height: 130px
+			resize: none
+
+		select
+
+			option
+
+				&:first-child
+
+					display: none
+
+button
+
+	border: none
+
+	&:active,
+	&:focus
+
+		outline: none
+
+input::-webkit-input-placeholder
+	opacity: 1
+	-webkit-transition: opacity 0.3s ease
+	transition: opacity 0.3s ease
+
+input::-moz-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+input:-moz-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+input:-ms-input-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+input:focus::-webkit-input-placeholder
+	opacity: 0
+	-webkit-transition: opacity 0.3s ease
+	transition: opacity 0.3s ease
+
+input:focus::-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+input:focus:-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+input:focus:-ms-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+textarea::-webkit-input-placeholder
+	opacity: 1
+	-webkit-transition: opacity 0.3s ease
+	transition: opacity 0.3s ease
+
+textarea::-moz-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+textarea:-moz-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+textarea:-ms-input-placeholder
+	opacity: 1
+	transition: opacity 0.3s ease
+
+textarea:focus::-webkit-input-placeholder
+	opacity: 0
+	-webkit-transition: opacity 0.3s ease
+	transition: opacity 0.3s ease
+
+textarea:focus::-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+textarea:focus:-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+textarea:focus:-ms-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+
+
+input::-webkit-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+input::-moz-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+input::-moz-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+input::-ms-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+input:focus
+	outline: none
+
+textarea::-webkit-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+textarea::-moz-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+textarea::-moz-input-placeholder
+	color: #b7c2ce
+	font-size: 16px
+
+textarea::-ms-input-placeholder
+	color: #b7c2ce
+	font-size: 16px

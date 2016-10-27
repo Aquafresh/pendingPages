@@ -1,0 +1,148 @@
+@media(max-width: 1199px)
+
+	.team,
+	.teamSecond
+
+		&Tab
+
+			margin-bottom: 45px
+
+			.mediaViewTabContentItem
+
+				padding: 7px
+				padding-bottom: 20px
+
+			.cardUser
+
+				width: calc(50% - 14px)
+				margin: 0
+				margin-right: 7px
+
+				&:nth-child(2n+2)
+
+					margin-right: 0
+
+		&Item
+
+			padding-top: 20px
+
+			&Img
+
+				width: 30%
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+				float: none
+				display: block
+
+				img
+
+					display: inline-block
+
+
+				span
+
+					display: none
+
+	.mediaViewTab
+
+		&.teamSecondTab
+
+			.mediaViewTab
+
+				&Tab
+
+				&Nav
+
+					position: relative
+					z-index: 5
+					display: block
+
+					&Mobile
+
+						display: block
+						width: 22px
+						height: 18px
+						border-top: 2px solid #90afc2
+						border-bottom: 2px solid #90afc2
+						display: block
+						cursor: pointer
+						position: relative
+						z-index: 1
+
+						&.show
+
+							transform: rotate(-90deg)
+
+							& ~ span,
+							& ~ a
+
+								transform: scale(1)
+
+						&:before
+
+							content: ''
+							position: absolute
+							top: 50%
+							left: 0
+							width: 100%
+							height: 2px
+							background-color: #90afc2
+							margin-top: -1px
+
+					span,
+					a
+
+						position: absolute
+						top: 0
+						left: 40px
+						transform: scale(0)
+
+						&.active
+
+							&:after
+
+								display: none
+
+						&:nth-child(2)
+
+							top: -105px
+
+						&:last-child
+
+							top: 55px
+
+						&:nth-child(3)
+
+							top: -65px
+
+						&:nth-child(4)
+
+							top: -25px
+
+						&:nth-child(5)
+
+							top: 15px
+
+
+@media (max-width: 768px)
+
+	.team,
+	.teamSecond
+
+		&Tab
+
+			.sliderUser
+
+				left: -25px
+
+			.cardUser
+
+				width: calc(100% - 14px)
+				margin: 7px
+				margin-bottom: 15px
+
+				&:nth-child(2n+3)
+
+					margin-right: 0
+

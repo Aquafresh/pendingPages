@@ -1,0 +1,112 @@
+.mainCaption
+
+	padding-top: 150px
+	padding-bottom: 187px
+	position: relative
+	z-index: 5
+
+	&Short
+
+		padding-bottom: 0
+
+		.mainCaption
+
+			&Index
+
+				padding-bottom: 166px
+
+	&Index
+
+		padding-left: calc(8.33333333% + 20px)
+		padding-bottom: 150px
+		text-align: left
+
+		h1,
+		.mainCaptionText
+
+			display: block
+			text-align: left
+			margin-bottom: 12px
+			font-weight: normal
+			width: 100%
+
+			&:before
+
+				display: none
+
+			span
+
+				display: block
+				font-size: 42px
+				line-height: 50px
+				letter-spacing: -1px
+				color: #fff
+				margin-bottom: 0
+
+
+		p,
+		.mainCaptionSuptext
+
+			display: block
+			font-size: 20px
+			color: #ffffff
+			line-height: 33px
+			margin-bottom: 15px
+			padding-left: 0
+			font-family: $ff-light
+
+			&:before
+
+				display: none
+
+		a
+
+			@extend .btn
+			@extend .btnColorPink
+			padding: 7px 29px
+
+	&Text
+
+		text-align: right
+		display: inline-block
+		vertical-align: middle
+		width: 49%
+		padding-right: 37px
+		font-weight: normal
+		font-family: $ff-regular
+		position: relative
+		z-index: 1
+
+		&:before
+
+			content: ''
+			display: block
+			height: calc(100% - 20px)
+			width: 1px
+			background-color: #885a7d
+			position: absolute
+			top: 10px
+			right: 0
+
+		span
+
+			display: block
+			font-size: 42px
+			line-height: 47px
+			color: #fff
+			letter-spacing: -1px
+			font-weight: normal
+			margin-bottom: 10px
+
+	&Suptext
+
+		display: inline-block
+		vertical-align: middle
+		width: 40%
+		padding-left: 37px
+		color: #e4e5e6
+		font-size: 17px
+		line-height: 36px
+		position: relative
+		z-index: 1
+		font-family: $ff-light

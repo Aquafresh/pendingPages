@@ -17827,7 +17827,7 @@ and dependencies (minified).
 			0:{
 				items:2
 			},
-			768:{
+			769:{
 				items:4
 			},
 			1200:{
@@ -17843,7 +17843,7 @@ and dependencies (minified).
 		loop:true,
 		margin:0,
 		nav: false,
-		autoplay: true,
+		autoplay: false,
 		dots: true,
 		smartSpeed: 900,
 		responsive:{
@@ -17858,6 +17858,7 @@ and dependencies (minified).
 			}
 		}
 	});
+
 	/**
 	 * [init user card slider]
 	 */
@@ -17872,7 +17873,7 @@ and dependencies (minified).
 			0:{
 				items:1
 			},
-			768:{
+			769:{
 				items:1
 			},
 			1200:{
@@ -18023,5 +18024,28 @@ and dependencies (minified).
 	 */
 	popupShow()
 
+	function initMap() {
+		var myLatLng = {lat: 40.753224, lng: -73.984173};
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 15,
+			center: myLatLng,
+			scrollwheel: false,
+			navigationControl: true,
+			mapTypeControl: true,
+			scaleControl: true,
+			draggable: true,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+
+		var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map
+		});
+	}
+
+
+	// Ждем полной загрузки страницы, после этого запускаем initMap()
+	google.maps.event.addDomListener(window, "load", initMap);
 
 })();

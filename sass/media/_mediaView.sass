@@ -1,0 +1,167 @@
+@media (max-width: 1199px)
+
+	.mediaView
+
+		&Tab
+
+			&Content
+
+				&[data-tab="content"]
+
+					.exampleItem
+
+						&:nth-child(-n+2)
+
+							margin-bottom: 4px
+
+				&:not([data-tab="content"])
+
+					.exampleItem
+
+						margin-right: 10px
+
+						&:nth-child(4n+4)
+
+							margin-right: 10px
+
+						&:nth-child(-n+4)
+
+							margin-top: 10px
+
+						&:nth-child(2n+2)
+
+							margin-right: 0
+
+						&:nth-child(-n+2)
+
+							margin-top: 0
+
+
+@media (max-width: 768px)
+
+	.mediaView
+
+		&Title
+
+			font-size: 17px
+
+		&Case
+
+			padding-bottom: 40px
+
+			.caseItem
+
+				width: 300px
+
+				&Img
+
+					margin: 0 auto
+					margin-bottom: 15px
+					max-width: 100%
+					display: block
+
+				&Info
+
+					width: 100%
+
+					&Caption
+
+						text-align: center
+						margin-bottom: 17px
+
+		&Tab
+
+			&Nav
+
+				position: relative
+				z-index: 5
+				display: block
+
+				&Mobile
+
+					display: block
+					width: 22px
+					height: 18px
+					border-top: 2px solid #90afc2
+					border-bottom: 2px solid #90afc2
+					display: block
+					cursor: pointer
+					position: relative
+					z-index: 1
+
+					&.show
+
+						transform: rotate(-90deg)
+
+						& ~ span,
+						& ~ a
+
+							transform: scale(1)
+
+					&:before
+
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0
+						width: 100%
+						height: 2px
+						background-color: #90afc2
+						margin-top: -1px
+
+				span,
+				a
+
+					position: absolute
+					top: 0
+					left: 40px
+					transform: scale(0)
+
+					&.active
+
+						&:after
+
+							display: none
+
+					&:nth-child(2)
+
+						top: -48px
+
+					&:last-child
+
+						top: 30px
+
+					&:nth-child(3)
+
+						top: -9px
+
+			&Content
+
+				&:not([data-tab="content"])
+
+					.exampleItem
+
+						width: 140px
+						margin-right: 5px
+
+						&:nth-child(4n+4)
+
+							margin-right: 5px
+
+						&:nth-child(-n+4)
+
+							margin-top: 5px
+
+						&:nth-child(2n+2)
+
+							margin-right: 5px
+
+						&:nth-child(-n+2)
+
+							margin-top: 5px
+
+				&Item
+
+					.exampleItem
+
+						width: 140px

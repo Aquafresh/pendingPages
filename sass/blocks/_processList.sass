@@ -1,0 +1,54 @@
+.processList
+
+	&:after
+
+		content: ''
+		display: block
+		clear: both
+
+	ul
+
+		float: left
+		width: 167px
+		margin-right: 25px
+
+		li
+
+			border: 3px solid #dadfe2
+			border-radius: 3px
+			background-color:
+			text-align: center
+			width: 100%
+			padding: 8px 0px
+			color: #3b3a3a
+			font-size: 14px
+			margin-bottom: 47px
+			position: relative
+			z-index: 1
+
+			&:after
+
+				content: ''
+				display: block
+				position: absolute
+				bottom: -50px
+				left: 0
+				right: 0
+				margin: 0 auto
+				width: 3px
+				height: 47px
+				background-color: #dadfe2
+
+			&:last-child
+
+				margin-bottom: 0
+
+				&:after
+
+					display: none
+
+			&:first-child
+
+				background-color: #0a9fea
+				border-color: #0a9fea
+				color: #fff
